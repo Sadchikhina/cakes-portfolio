@@ -13,16 +13,16 @@
       <header class="page-header">
         <span class="page-header__logo">Cakes</span>
         <button class="page-header__button" type="button" aria-label="открыть меню"></button>
-        <nav class="main-nav">
-          <ul class="main-nav__list cite-nav">
-            <li class="cite-nav__item">Наши торты</li>
-            <li class="cite-nav__item">Индивидуальный заказ</li>
-            <li class="cite-nav__item">Отзывы</li>
-            <li class="cite-nav__item">О нас</li>
-            <li class="cite-nav__item">Как заказать</li>
-            <li class="cite-nav__item">Контакты</li>
+        <nav class="main-nav-header">
+          <ul class="main-nav-header__list header-nav">
+            <li class="header-nav__item">Наши торты</li>
+            <li class="header-nav__item">Индивидуальный заказ</li>
+            <li class="header-nav__item">О нас</li>
+            <li class="header-nav__item">Контакты</li>
+            <li class="header-nav__item">Личный кабинет</li>
           </ul>
         </nav>
+        <p class="page-header__tel">+7 906 899 92 96</p>
       </header>
       <main class="page-main">
         <section class="cakes-order">
@@ -66,10 +66,10 @@
         <section class="about-us">
           <h2 class="about-us__title">О нас</h2>
           <img class="about-us__img" src="#" alt="Павел">
-          <ul class="about-us__list social-list">
-            <li class="social-list__item social-list__item--insta"><a href="https://www.instagram.com" target="_blank" aria-label="инстаграм">IT</a></li>
-            <li class="social-list__item social-list__item--vk"><a href="https://vk.com" target="_blank" aria-label="вконтакте">VK</a></li>
-            <li class="social-list__item social-list__item--twitter"><a href="https://twitter.com" target="_blank" aria-label="твиттер">TW</a></li>
+          <ul class="about-us__list social-list-about">
+            <li class="social-list-about__item social-list-about__item--insta"><a href="https://www.instagram.com" target="_blank" aria-label="инстаграм">IT</a></li>
+            <li class="social-list-about__item social-list-about__item--vk"><a href="https://vk.com" target="_blank" aria-label="вконтакте">VK</a></li>
+            <li class="social-list-about__item social-list-about__item--twitter"><a href="https://twitter.com" target="_blank" aria-label="твиттер">TW</a></li>
           </ul>
           <div class="about-confection">
             <h3 class="about-confection__title">О кондитере</h3>
@@ -86,7 +86,45 @@
             </ul>
           </div>
         </section>
+        <section class="contacts">
+          <h2 class="contacts__title">Контакты</h2>
+          <p class="contacts__text">Остались вопросы</p>
+          <p class="contacts__intsruction">Заполните форму ниже и наш кондитер свяжется с Вами</p>
+          <form class="feedback" action="#" method="get">
+            <input class="feedback__input feedback__input--name" type="text" name="yourname" placeholder="Ваше имя">
+            <input class="feedback__input feedback__input--email" type="email" name="youremail" placeholder="Email адрес">
+            <textarea class="feedback__input feedback__input--question" name="yourquestion">Ваш вопрос</textarea>
+            <button class="contacts__button" type="submit" name="send-button">Отправить</button>
+          </form>
+          <ul class="contacts__list">
+            <li class="contacts__tel">Или позвоните по телефону: <br> +7 906 899 92 96</li>
+            <li class="contacts__email">Наша почта: bakerybypavel@mail.ru</li>
+            <li class="contacts__social">Мы в соц. сетях:
+              <ul class="social-list-contacts">
+                <li class="social-list-contacts__item social-list-contacts__item--insta"><a href="https://www.instagram.com" target="_blank" aria-label="инстаграм">IT</a></li>
+                <li class="social-list-contacts__item social-list-contacts__item--vk"><a href="https://vk.com" target="_blank" aria-label="вконтакте">VK</a></li>
+              </ul>
+            </li>
+          </ul>
+        </section>
       </main>
+      <footer class="page-footer">
+        <span class="page-footer__logo">Cakes</span>
+        <nav class="main-nav-footer">
+          <ul class="main-nav-footer__list footer-nav">
+            <li class="footer-nav__item">Наши торты</li>
+            <li class="footer-nav__item">Индивидуальный заказ</li>
+            <li class="footer-nav__item">О нас</li>
+            <li class="footer-nav__item">Контакты</li>
+            <li class="footer-nav__item">Личный кабинет</li>
+          </ul>
+          <ul class="page-footer__list social-list-footer">
+            <li class="social-list-footer__item social-list-footer__item--insta"><a href="https://www.instagram.com" target="_blank" aria-label="инстаграм">IT</a></li>
+            <li class="social-list-footer__item social-list-footer__item--vk"><a href="https://vk.com" target="_blank" aria-label="вконтакте">VK</a></li>
+          </ul>
+        </nav>
+        <span class="page-footer__trademark">2018 Cakes</span>
+      </footer>
     </div>
     <script src="js/picturefill.min.js"></script>
   </body>
