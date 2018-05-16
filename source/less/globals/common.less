@@ -1,3 +1,20 @@
 body {
-  background-color: @rose-bg;
+  background-color: @grey;
+  min-width: 320px;
+}
+
+@media (min-width: @desctop-width) {
+  body {
+    min-width: @desctop-width;
+  }
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
