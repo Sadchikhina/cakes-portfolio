@@ -1,8 +1,62 @@
 .cakes-list {
   .list();
 
-  width: 280px;
+  width: 278px;
   margin: 0 auto;
+}
+
+.cakes-list__item {
+  position: relative;
+  height: 120px;
+  margin-bottom: 10px;
+  overflow: hidden;
+
+  img {
+    position: absolute;
+  }
+}
+
+.cakes-list__img {
+  &--classic {
+    top: -61px;
+    left: -3px;
+  }
+
+  &--muss {
+    top: -89px;
+    left: -81px;
+  }
+
+  &--wedding {
+    top: -24px;
+    left: -21px;
+  }
+
+  &--man {
+    top: -51px;
+    left: -3px;
+  }
+
+  &--man {
+    top: -51px;
+    left: -3px;
+  }
+
+  &--woman {
+    top: -48px;
+    left: -96px;
+  }
+
+  &--kid {
+    top: -49px;
+    left: -4px;
+  }
+}
+
+.cakes-list__description {
+  position: absolute;
+  padding-left: 11px;
+  padding-top: 12px;
 }
 
 .cakes-list__title {
