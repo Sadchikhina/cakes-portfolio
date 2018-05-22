@@ -9,9 +9,6 @@
     <meta name="description" content="">
   </head>
   <body>
-    <div style="display:none">
-      <include src="build/img/sprite.svg"></include>
-    </div>
     <div class="content-wrapper">
       <header class="page-header">
         <span class="page-header__logo">Cakes</span>
@@ -145,8 +142,30 @@
               <label class="choise-form__input-label" for="topping">Размер</label>
               <input class="choise-form__field" type="text" name="topping-field" id="topping" value="Маршмеллоу">
             </p>
-            <button  class="choise-form__button" type="submit" name="order" aria-label="заказать">Заказать торт</button>
+            <button  class="choise-form__button button-rose" type="submit" name="order" aria-label="заказать">Заказать торт</button>
           </form>
+        </section>
+        <section class="opinion">
+          <h2 class="opinion__title">Отзывы</h2>
+          <div class="opinion__wrapper">
+            <div class="opinion__frame-circle">
+              <img class="opinion__img" src="img/photo-maria-mobile.jpg" alt="мария">
+            </div>            
+            <div class="opinion__description">
+              <p class="opinion__name">Мария</p>
+              <span class="opinion__details">юрист, 33 года</span>
+              <p class="opinion__text">Заказывала торт брауни на юбилей мужа. Гости были в восторге!
+                Отдельное спасибо за своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:) <a class="opinion__link" href="#">Развернуть</a></p>
+              <span class="opinion_pages">1/26</span>
+            </div>
+          </div>
+          <div class="opinion__pagination pagination">
+            <span class="pagination__dot pagination__dot--active"></span>
+            <span class="pagination__dot"></span>
+            <span class="pagination__dot"></span>
+            <span class="pagination__dot"></span>
+            <span class="pagination__dot pagination__dot--last"></span>
+          </div>
         </section>
         <section class="about-us">
           <h2 class="about-us__title">О нас</h2>
@@ -177,11 +196,11 @@
           <h2 class="contacts__title">Контакты</h2>
           <p class="contacts__text">Остались вопросы?</p>
           <p class="contacts__intsruction">Заполните форму ниже и наш кондитер свяжется с Вами</p>
-          <form class="feedback" action="#" method="get">
-            <input class="feedback__input feedback__input--name" type="text" name="yourname" placeholder="Ваше имя">
-            <input class="feedback__input feedback__input--email" type="email" name="youremail" placeholder="Email адрес">
-            <textarea class="feedback__input feedback__input--question" name="yourquestion">Ваш вопрос</textarea>
-            <button class="feedback__button button-rose" type="submit" name="send-button">Отправить</button>
+          <form class="feedback-form" action="#" method="get">
+            <input class="feedback-form__input feedback-form__input--name" type="text" name="yourname" placeholder="Ваше имя">
+            <input class="feedback-form__input feedback-form__input--email" type="email" name="youremail" placeholder="Email адрес">
+            <textarea class="feedback-form__input feedback-form__input--question" name="yourquestion">Ваш вопрос</textarea>
+            <button class="feedback-form__button button-rose" type="submit" name="send-button">Отправить</button>
           </form>
           <ul class="contacts__list">
             <li class="contacts__tel">Или позвоните по телефону: <br> <a href="tel:+79068999296">+7 906 899 92 96</a></li>
