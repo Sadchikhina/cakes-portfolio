@@ -18,9 +18,11 @@
         <nav class="main-nav-header">
           <ul class="main-nav-header__list header-nav">
             <li class="header-nav__item"><a href="#">Наши торты</a></li>
+            <li class="header-nav__item"><a href="#">Индивидуальный заказ</a></li>
+            <li class="header-nav__item"><a href="#">Отзывы</a></li>
             <li class="header-nav__item"><a href="#">О нас</a></li>
+            <li class="header-nav__item"><a href="#">Как заказать</a></li>
             <li class="header-nav__item"><a href="#">Контакты</a></li>
-            <li class="header-nav__item"><a href="#">Личный кабинет</a></li>
           </ul>
         </nav>
         <p class="page-header__tel">+7 906 899 92 96</p>
@@ -41,48 +43,110 @@
           <h2 class="cakes-catalog__title">Наши торты</h2>
           <ul class="cakes-catalog__list cakes-list">
             <li class="cakes-list__item">
-              <img class="cakes-list__img cakes-list__img--classic" src="img/cake-classic-mobile.jpg" alt="классический">
+              <a href="#"><img class="cakes-list__img cakes-list__img--classic" src="img/cake-classic-mobile.jpg" alt="классический"></a>
               <div class="cakes-list__description">
                 <p class="cakes-list__title">Классические</p>
                 <span class="cakes-list__amount">24 вида</span>
               </div>
             </li>
             <li class="cakes-list__item">
-              <img class="cakes-list__img cakes-list__img--muss" src="img/cake-muss-mobile.jpg" alt="муссовые">
+              <a href="#"><img class="cakes-list__img cakes-list__img--muss" src="img/cake-muss-mobile.jpg" alt="муссовые"></a>
               <div class="cakes-list__description">
                 <p class="cakes-list__title">Муссовые</p>
                 <span class="cakes-list__amount">12 видов</span>
               </div>
             </li>
             <li class="cakes-list__item">
-              <img class="cakes-list__img cakes-list__img--wedding" src="img/cake-wedding-mobile.jpg" alt="свадебные">
+              <a href="#"><img class="cakes-list__img cakes-list__img--wedding" src="img/cake-wedding-mobile.jpg" alt="свадебные"></a>
               <div class="cakes-list__description">
                 <p class="cakes-list__title">Свадебные</p>
                 <span class="cakes-list__amount">20 видов</span>
               </div>
             </li>
             <li class="cakes-list__item">
-              <img class="cakes-list__img cakes-list__img--man" src="img/cake-man-mobile.jpg" alt="мужчинам">
+              <a href="#"><img class="cakes-list__img cakes-list__img--man" src="img/cake-man-mobile.jpg" alt="мужчинам"></a>
               <div class="cakes-list__description">
                 <p class="cakes-list__title">Мужчинам</p>
                 <span class="cakes-list__amount">12 видов</span>
               </div>
             </li>
             <li class="cakes-list__item">
-              <img class="cakes-list__img cakes-list__img--woman" src="img/cake-woman-mobile.jpg" alt="женщинам">
+              <a href="#"><img class="cakes-list__img cakes-list__img--woman" src="img/cake-woman-mobile.jpg" alt="женщинам"></a>
               <div class="cakes-list__description">
                 <p class="cakes-list__title">Женщинам</p>
                 <span class="cakes-list__amount">16 видов</span>
               </div>
             </li>
             <li class="cakes-list__item">
-              <img class="cakes-list__img cakes-list__img--kid" src="img/cake-kid-mobile.jpg" alt="детские">
+              <a href="#"><img class="cakes-list__img cakes-list__img--kid" src="img/cake-kid-mobile.jpg" alt="детские"></a>
               <div class="cakes-list__description">
                 <p class="cakes-list__title">Детские</p>
                 <span class="cakes-list__amount">18 видов</span>
               </div>
             </li>
           </ul>
+        </section>
+        <section class="individual">
+          <h2 class="individual__title">Индивидуальный заказ</h2>
+          <p class="individual__text">Соберите торт в 3 шага</p>
+          <ul class="individual__list make-cake-list">
+            <li class="make-cake-list__item">
+              <p class="make-cake-list__stage"><span class="make-cake-list__number">01</span>Выберите начинку</p>
+              <img class="make-cake-list__img" src="img/photo-ganash-mobile.png" alt="начинка">
+              <div class="make-cake-list__pagination pagination">
+                <span class="pagination__dot pagination__dot--active"></span>
+                <span class="pagination__dot"></span>
+                <span class="pagination__dot"></span>
+                <span class="pagination__dot"></span>
+                <span class="pagination__dot pagination__dot--last"></span>
+              </div>
+              <h3 class="make-cake-list__title">Шоколадный ганаш</h3>
+              <p class="make-cake-list__text">Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!</p>
+              <span class="make-cake-list__price">1000 руб/кг</span>
+              <button class="make-cake-list__button button-rose" type="button" aria-label="выбрать">Выбрать</button>
+            </li>
+            <li class="make-cake-list__item">
+              <p class="make-cake-list__stage"><span class="make-cake-list__number">02</span>Размер</p>
+              <span class="make-cake-list__weight">1 кг</span>
+              <div class="make-cake-list__pagination pagination">
+                <span class="pagination__dot pagination__dot--active"></span>
+                <span class="pagination__dot"></span>
+                <span class="pagination__dot"></span>
+              </div>
+              <p class="make-cake-list__title">17-18 см <span class="make-cake-list__new-line">(1кг - 6 персон)</span></p>
+              <button class="make-cake-list__button button-rose" type="button" aria-label="выбрать">Выбрать</button>
+            </li>
+            <li class="make-cake-list__item">
+              <p class="make-cake-list__stage"><span class="make-cake-list__number">03</span>Оформление</p>
+              <img class="make-cake-list__img" src="img/photo-marshmellow-mobile.png" alt="начинка">
+              <div class="make-cake-list__pagination pagination">
+                <span class="pagination__dot pagination__dot--active"></span>
+                <span class="pagination__dot"></span>
+                <span class="pagination__dot"></span>
+                <span class="pagination__dot"></span>
+                <span class="pagination__dot pagination__dot--last"></span>
+              </div>
+              <h3 class="make-cake-list__title">Маршмеллоу</h3>
+              <span class="make-cake-list__price">1000 руб/кг</span>
+              <button class="make-cake-list__button button-rose" type="button" aria-label="выбрать">Выбрать</button>
+            </li>
+          </ul>
+          <form class="choise-form" action="index.html" method="get">
+            <label class="choise-form__label"></label>
+            <p class="choise-form__input">
+              <label class="choise-form__input-label" for="filling">Начинка</label>
+              <input class="choise-form__field" type="text" name="filling-field" id="filling" value="Шоколадный ганаш">
+            </p>
+            <p class="choise-form__input">
+              <label class="choise-form__input-label" for="size">Размер</label>
+              <input class="choise-form__field" type="text" name="size-field" id="size" value="1 кг">
+            </p>
+            <p class="choise-form__input">
+              <label class="choise-form__input-label" for="topping">Размер</label>
+              <input class="choise-form__field" type="text" name="topping-field" id="topping" value="Маршмеллоу">
+            </p>
+            <button  class="choise-form__button" type="submit" name="order" aria-label="заказать">Заказать торт</button>
+          </form>
         </section>
         <section class="about-us">
           <h2 class="about-us__title">О нас</h2>
