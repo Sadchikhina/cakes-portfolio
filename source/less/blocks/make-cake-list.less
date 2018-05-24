@@ -4,16 +4,26 @@
 
 .make-cake-list__item {
   background-color: @white;
-  padding-left: 18px;
-  padding-top: 1px;
+  padding-top: 2px;
+  padding-bottom: 26px;
+  margin-bottom: 10px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &:nth-of-type(2) {
+    padding-top: 1px;
+  }
 }
 
 .make-cake-list__stage {
   font-size: 16px;
-  line-height: 12px;
+  line-height: 10px;
   font-weight: bold;
   color: @rose-btn;
   margin-bottom: 21px;
+  margin-left: 18px;
 }
 
 .make-cake-list__number {
@@ -22,9 +32,144 @@
 }
 
 .make-cake-list__frame {
-  width: 241px;
-  height: 113px;
-  background-color: @rose-bg;
+  position: relative;
   overflow: hidden;
+  margin: 0 auto;
+
+  &--filling {
+  width: 241px;
+  height: 114px;
+  background-color: @rose-bg;
   margin-bottom: 10px;
+
+  &::after {
+    content: "1/12";
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    color: @white;
+  }
+}
+  &--topping {
+    width: 170px;
+    height: 204px;
+    margin-bottom: 11px;
+    box-shadow: 0 0 3px 2px @rose-bg;
+
+    &::after {
+      content: "1/35";
+      position: absolute;
+      bottom: 5px;
+      right: 5px;
+      color: @black;
+    }
+  }
+}
+
+.make-cake-list__img {
+  position: absolute;
+
+  &--filling {
+    bottom: -25px;
+    left: -1px;
+  }
+
+  &--topping {
+    bottom: -72px;
+    left: -13px;
+  }
+}
+
+.make-cake-list__title {
+  font-size: 13px;
+  padding: 0;
+  margin: 0;
+
+  &--filling {
+    margin-top: 19px;
+    margin-bottom: 5px;
+    margin-left: 18px;
+  }
+
+  &--topping {
+    text-align: center;
+    margin-top: 14px;
+    margin-bottom: 3px;
+  }
+}
+
+.make-cake-list__text {
+  line-height: 17px;
+  padding: 0;
+  margin: 0;
+  margin-left: 18px;
+  margin-bottom: 12px;
+
+  &--diameter {
+    font-weight: bold;
+    text-align: center;
+    margin-left: 0;
+    margin-top: 13px;
+    margin-bottom: 57px;
+  }
+}
+
+.make-cake-list__new-line {
+  display: block;
+}
+
+.make-cake-list__price {
+  display: block;
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: bold;
+
+  &--filling {
+    width: 103px;
+    margin-bottom: 21px;
+  }
+
+  &--topping {
+    width: 94px;
+    margin-bottom: 28px;
+  }
+}
+
+.make-cake-list__weight {
+  position: relative;
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 96px;
+  margin-bottom: 91px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -44px;
+    right: 75px;
+    width: 120px;
+    height: 120px;
+    background-image: url("../img/diametr-1kg.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.make-cake-list__pagination {
+  margin: 0 auto;
+
+  &--full {
+    width: 57px;
+  }
+
+  &--short {
+    width: 44px;
+  }
+}
+
+.make-cake-list__button {
+  display: block;
+  width: 180px;
+  margin: 0 auto;
 }
