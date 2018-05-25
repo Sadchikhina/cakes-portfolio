@@ -41,28 +41,13 @@
   height: 114px;
   background-color: @rose-bg;
   margin-bottom: 10px;
-
-  &::after {
-    content: "1/12";
-    position: absolute;
-    bottom: 5px;
-    right: 5px;
-    color: @white;
-  }
 }
+
   &--topping {
     width: 170px;
     height: 204px;
     margin-bottom: 11px;
     box-shadow: 0 0 3px 2px @rose-bg;
-
-    &::after {
-      content: "1/35";
-      position: absolute;
-      bottom: 5px;
-      right: 5px;
-      color: @black;
-    }
   }
 }
 
@@ -77,6 +62,20 @@
   &--topping {
     bottom: -72px;
     left: -13px;
+  }
+}
+
+.make-cake-list__page {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+
+  &--filling {
+    color: @white;
+  }
+
+  &--topping {
+    color: @black;
   }
 }
 

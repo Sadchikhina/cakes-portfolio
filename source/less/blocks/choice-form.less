@@ -1,7 +1,10 @@
 .choice-form {
   width: 278px;
   margin: 0 auto;
-  padding-left: 18px;
+  padding-left: 14px;
+  padding-right: 22px;
+  padding-bottom: 34px;
+  margin-bottom: 39px;
   background-color: @white;
 }
 
@@ -18,4 +21,39 @@
   flex-direction: column;
   padding: 0;
   margin: 0;
+  margin-bottom: 12px;
+}
+
+.choice-form__input-label {
+  font-style: italic;
+  font-weight: bold;
+  color: @rose-btn;
+  text-align: center;
+
+  &--filling {
+    margin-bottom: 4px;
+  }
+
+  &--size {
+    margin-bottom: 8px;
+  }
+
+  &--topping {
+    margin-bottom: 8px;
+  }
+}
+
+.choice-form__field {
+  font-size: @small-size;
+  text-align: center;
+  height: 30px;
+  border-radius: 50px;
+  border: 1px solid @grey-light;
+}
+
+.choice-form__button {
+  display: block;
+  width: 226px;
+  margin-top: 30px;
+  margin-left: 12px;
 }

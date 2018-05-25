@@ -91,6 +91,7 @@
               <p class="make-cake-list__stage"><span class="make-cake-list__number">01</span>Выберите начинку</p>
               <div class="make-cake-list__frame make-cake-list__frame--filling">
                 <img class="make-cake-list__img make-cake-list__img--filling" src="img/photo-ganash-mobile.png" alt="начинка">
+                <span class="make-cake-list__page make-cake-list__page--filling">1/12</span>
               </div>
               <div class="make-cake-list__pagination make-cake-list__pagination--full pagination">
                 <span class="pagination__dot pagination__dot--active"></span>
@@ -120,6 +121,7 @@
               <p class="make-cake-list__stage"><span class="make-cake-list__number">03</span>Оформление</p>
               <div class="make-cake-list__frame make-cake-list__frame--topping">
                 <img class="make-cake-list__img make-cake-list__img--topping" src="img/photo-marshmellow-mobile.jpg" alt="начинка">
+                <span class="make-cake-list__page make-cake-list__page--topping">1/35</span>
               </div>
               <div class="make-cake-list__pagination make-cake-list__pagination--full pagination">
                 <span class="pagination__dot pagination__dot--active"></span>
@@ -135,17 +137,17 @@
           </ul>
           <form class="choice-form" action="index.html" method="get">
             <label class="choice-form__label">Ваш выбор</label>
-            <p class="choice-form__input">
-              <label class="choice-form__input-label" for="filling">Начинка</label>
-              <input class="choice-form__field" type="text" name="filling-field" id="filling" value="Шоколадный ганаш">
+            <p class="choice-form__input choice-form__input--filling">
+              <label class="choice-form__input-label choice-form__input-label--filling" for="filling">Начинка</label>
+              <input class="choice-form__field choice-form__field--filling" type="text" name="filling-field" id="filling" value="Шоколадный ганаш">
             </p>
-            <p class="choice-form__input">
-              <label class="choice-form__input-label" for="size">Размер</label>
-              <input class="choice-form__field" type="text" name="size-field" id="size" value="1 кг">
+            <p class="choice-form__input choice-form__input--size">
+              <label class="choice-form__input-label choice-form__input-label--size" for="size">Размер</label>
+              <input class="choice-form__field choice-form__field--size" type="text" name="size-field" id="size" value="1 кг">
             </p>
-            <p class="choice-form__input">
-              <label class="choice-form__input-label" for="topping">Размер</label>
-              <input class="choice-form__field" type="text" name="topping-field" id="topping" value="Маршмеллоу">
+            <p class="choice-form__input choice-form__input--topping">
+              <label class="choice-form__input-label choice-form__input-label--topping" for="topping">Оформление</label>
+              <input class="choice-form__field choice-form__field--topping" type="text" name="topping-field" id="topping" value="Маршмеллоу">
             </p>
             <button  class="choice-form__button button-rose" type="submit" name="order" aria-label="заказать">Заказать торт</button>
           </form>
@@ -153,7 +155,7 @@
         <section class="opinion">
           <h2 class="opinion__title">Отзывы</h2>
           <div class="opinion__wrapper">
-            <div class="opinion__frame-circle">
+            <div class="opinion__frame">
               <img class="opinion__img" src="img/photo-maria-mobile.jpg" alt="мария">
             </div>
             <div class="opinion__description">
@@ -161,7 +163,7 @@
               <span class="opinion__details">юрист, 33 года</span>
               <p class="opinion__text">Заказывала торт брауни на юбилей мужа. Гости были в восторге!
                 Отдельное спасибо за своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:) <a class="opinion__link" href="#">Развернуть</a></p>
-              <span class="opinion_pages">1/26</span>
+              <span class="opinion__pages">1/26</span>
             </div>
           </div>
           <div class="opinion__pagination pagination">
