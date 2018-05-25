@@ -1,9 +1,9 @@
 .advantages {
   width: 100%;
-  text-align: center;
 }
 
 .advantages__title {
+  text-align: center;
   font-size: @title-size;
   line-height: 33px;
   padding: 0;
@@ -15,7 +15,41 @@
   display: block;
   font-size: 16px;
   font-style: italic;
+  text-align: center;
   padding: 0;
   margin: 0;
   margin-bottom: 15px;
+}
+
+.advantages__wrapper {
+  position: relative;
+  height: 171px;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -73px;
+    width: 461px;
+    height: 452px;
+    background-image: url("../img/snow.png");
+  }
+}
+
+.advantages__plate {
+  position: absolute;
+  top: 45px;
+  left: -21px;
+  width: 353px;
+  height: 353px;
+  border: 1px solid @white;
+  border-radius: 100%;
+  background-color: #f7f7f7;
+}
+
+.advantages__img {
+  position: absolute;
+  top: 59px;
+  left: -6px;
 }
