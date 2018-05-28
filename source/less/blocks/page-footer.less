@@ -17,12 +17,13 @@
 
 .page-footer__list {
   display: flex;
+  align-items: center;
   position: relative;
 
   &::after {
-    position: absolute;
-    bottom: 5px;
     content: "";
+    position: absolute;
+    bottom: -16px;
     width: 280px;
     height: 1px;
     background-color: @grey-footer-line;
@@ -30,14 +31,13 @@
 
   .social-list__item {
     background-color: inherit;
-    margin-right: 15px;
+    margin-right: 19px;
 
     &--insta {
       background-image: url("../img/icon-instagram-grey.png");
       width: 23px;
       height: 23px;
       border-radius: 0;
-
     }
 
     &--vk {
@@ -51,5 +51,7 @@
 }
 
 .page-footer__copyright {
+  font-size: @small-size;
   color: @grey-light;
+  margin-left: 1px;
 }
