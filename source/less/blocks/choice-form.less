@@ -49,6 +49,16 @@
   height: 30px;
   border-radius: 50px;
   border: 1px solid @grey-light;
+  outline: none;
+
+  &:hover {
+    border: none;
+    box-shadow: 0 0 3px 2px @rose-shadow;
+  }
+
+  &:focus {
+    border: 1px solid @rose-btn;
+  }
 }
 
 .choice-form__button {

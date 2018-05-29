@@ -10,11 +10,21 @@
   font-size: @small-size;
   padding-left: 9px;
   margin-bottom: 10px;
+  outline: none;
 
   &--question {
     height: 120px;
     padding-top: 12px;
     margin-bottom: 16px;
+  }  
+
+  &:hover {
+    border: none;
+    box-shadow: 0 0 3px 2px @rose-shadow;
+  }
+
+  &:focus {
+    border: 1px solid @rose-btn;
   }
 }
 

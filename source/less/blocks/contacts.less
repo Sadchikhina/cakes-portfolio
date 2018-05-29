@@ -28,15 +28,23 @@
 
 .contacts__tel {
   margin-bottom: 13px;
-
-  a {
-    color: inherit;
-    text-decoration: none;
-  }
 }
 
 .contacts__email {
   margin-bottom: 14px;
+}
+
+.contacts__link {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    color: @rose-btn;
+  }
+
+  &:active {
+    color: @white;
+  }
 }
 
 .contacts__intro {
