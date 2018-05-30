@@ -4,17 +4,19 @@
 
 .social-list__item {
   display: block;
-  width: 36px;
-  height: 36px;
   border-radius: 50%;
-  margin-bottom: 15px;
   text-align: center;
-  padding-top: 10px;
   background-color: @white;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .social-list__icon {
   fill: @rose-btn;
+
+  &--grey {
+    fill: @grey-light;
+
+    &:hover {
+      fill: @white;
+    }
+  }
 }
