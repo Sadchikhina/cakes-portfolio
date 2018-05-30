@@ -55,14 +55,28 @@
 
 .contacts__list {
   .list();
+}
 
-  &--social {
-    display: flex;
+.contacts__social-list {
+  display: flex;
 
-    .social-list__item {
-      width: 63px;
-      height: 63px;
-      margin-right: 31px;
+  .social-list__item {
+    width: 63px;
+    height: 63px;
+    margin-right: 31px;
+    padding-top: 15px;
+
+    &--vk {
+      padding-top: 10px;
+    }
+
+    &:hover {
+      box-shadow: 0 0 2px 2px @rose-shadow;
+    }
+
+    &:active {
+      opacity: 0.3;
+      box-shadow: none;
     }
   }
 }

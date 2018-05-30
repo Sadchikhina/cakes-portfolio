@@ -1,13 +1,22 @@
 .footer-nav {
   .list();
-  margin-bottom: 31px;
+  margin-bottom: 27px;
+}
+
+.footer-nav__item {
+  margin-bottom: 12px;
 
   a {
     color: @white;
     text-decoration: none;
   }
-}
 
-.footer-nav__item {
-  margin-bottom: 12px;
+  &:hover a {
+    color: @rose-btn;
+  }
+
+  &:active a {
+    color: @white;
+    opacity: 0.3;
+  }
 }

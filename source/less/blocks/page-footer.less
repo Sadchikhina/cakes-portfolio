@@ -23,7 +23,7 @@
   &::after {
     content: "";
     position: absolute;
-    bottom: -16px;
+    bottom: -24px;
     width: 280px;
     height: 1px;
     background-color: @grey-footer-line;
@@ -32,11 +32,21 @@
   .social-list__item {
     background-color: inherit;
     margin-right: 19px;
+
+    &:hover svg {
+      fill: @white;
+    }
+
+    &:active svg {
+      opacity: 0.1;
+    }
   }
 }
 
 .page-footer__copyright {
+  display: block;
   font-size: @small-size;
   color: @grey-light;
   margin-left: 1px;
+  margin-top: 30px;
 }
