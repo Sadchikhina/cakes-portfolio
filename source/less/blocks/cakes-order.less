@@ -33,3 +33,81 @@
 .cakes-order__button {
   width: 226px;
 }
+
+@media (min-width: @tablet-width) {
+  .cakes-order {
+    background-image: url("../img/bg-tablet-cake.png");
+    background-position: 328px 9px;
+    margin-bottom: 65px;
+  }
+
+  .cakes-order__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 103px;
+    padding-left: 47px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 30px;
+      left: 325px;
+      width: 72px;
+      height: 71px;
+      background-image: url("../img/icon-berry-1.png");
+      background-repeat: no-repeat;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 397px;
+      left: 274px;
+      width: 100px;
+      height: 61px;
+      background-image: url("../img/icon-berry-3.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .cakes-order__title {
+    text-align: left;
+    font-size: 60px;
+    line-height: 55px;
+    letter-spacing: 4px;
+    margin-bottom: 26px;
+    order: 1;
+  }
+
+  .cakes-order__text {
+    position: relative;
+    text-align: left;
+    font-size: 25px;
+    margin-bottom: 57px;
+    order: 2;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 9px;
+      left: 245px;
+      width: 41px;
+      height: 41px;
+      background-image: url("../img/icon-berry-2.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .cakes-order__button {
+    margin-bottom: 162px;
+    order: 3;
+  }
+
+  .cakes-order__list {
+    order: 4;
+  }
+}

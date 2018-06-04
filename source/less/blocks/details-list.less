@@ -32,3 +32,36 @@
     background-repeat: no-repeat;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .details-list {
+    display: flex;
+    margin-left: 52px;
+  }
+
+  .details-list__item {
+    margin-right: 126px;
+
+    &--ingredients:before {
+      background-image: url("../img/icon-ingredient-big.png");
+      background-size: cover;
+      width: 55px;
+      height: 55px;
+      top: -15px;
+      left: -51px;
+    }
+
+    &--delivery:before {
+      background-image: url("../img/icon-delivery-big.png");
+      background-size: cover;
+      width: 55px;
+      height: 55px;
+      top: -15px;
+      left: -56px;
+    }
+  }
+
+  .details-list__new-line {
+    display: block;
+  }
+}
