@@ -172,3 +172,23 @@
   width: 180px;
   margin: 0 auto;
 }
+
+@media (min-width: @tablet-width) {
+  .make-cake-list__stage {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .make-cake-list__number {
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+
+  .make-cake-list__item {
+    &--filling {
+      display: flex;
+    }
+  }
+}
