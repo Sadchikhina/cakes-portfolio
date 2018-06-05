@@ -80,3 +80,21 @@
   font-size: 11px;
   color: @grey-cakes-list;
 }
+
+@media (min-width: @tablet-width) {
+  .cakes-list {
+    width: 100%;
+  }
+
+  .cakes-list__item {
+    width: 290px;
+    height: 185px;
+    outline: 1px solid @black;
+
+    &--classic,
+    &--kid {
+      width: 420px;
+      height: 388px;
+    }
+  }
+}
