@@ -11,10 +11,6 @@
   margin-bottom: 10px;
   overflow: hidden;
 
-  img {
-    position: absolute;
-  }
-
   &:hover {
     opacity: 0.7;
     box-shadow: 0 0 5px 2px @rose-shadow;
@@ -27,6 +23,8 @@
 }
 
 .cakes-list__img {
+  position: absolute;
+
   &--classic {
     top: -61px;
     left: -3px;
@@ -65,8 +63,8 @@
 
 .cakes-list__description {
   position: absolute;
-  padding-left: 11px;
-  padding-top: 12px;
+  left: 11px;
+  top: 12px;
 }
 
 .cakes-list__title {
@@ -87,13 +85,13 @@
   }
 
   .cakes-list__item {
-    width: 290px;
+    width: 286px;
     height: 185px;
-    outline: 1px solid @black;
+    box-shadow: 0 2px 1px 1px @rose-light-shadow;
 
     &--classic,
     &--kid {
-      width: 420px;
+      width: 417px;
       height: 388px;
     }
   }
@@ -110,5 +108,47 @@
       flex-direction: column;
       justify-content: space-between;
     }
+  }
+
+  .cakes-list__img {
+    &--classic {
+      top: -11px;
+      left: -3px;
+    }
+
+    &--muss {
+      top: -63px;
+      left: -65px;
+    }
+
+    &--wedding {
+      top: -7px;
+      left: -30px;
+    }
+
+    &--man {
+      top: -31px;
+      left: -3px;
+    }
+
+    &--man {
+      top: -40px;
+      left: -18px;
+    }
+
+    &--woman {
+      top: -26px;
+      left: -115px;
+    }
+
+    &--kid {
+      top: -20px;
+      left: -43px;
+    }
+  }
+
+  .cakes-list__description {
+    left: 25px;
+    top: 21px;
   }
 }
