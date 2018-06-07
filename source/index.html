@@ -114,7 +114,12 @@
             <li class="make-cake-list__item make-cake-list__item--filling">
               <p class="make-cake-list__stage"><span class="make-cake-list__number">01</span>Выберите начинку</p>
               <div class="make-cake-list__frame make-cake-list__frame--filling">
-                <img class="make-cake-list__img make-cake-list__img--filling" src="img/photo-ganash-mobile.png" alt="начинка">
+                <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-ganash-tablet.png">
+                  <source type="image/webp" srcset="img/photo-ganash-mobile.png">
+                  <source media="(min-width: 768px)" srcset="img/photo-ganash-tablet.png">
+                  <img class="make-cake-list__img make-cake-list__img--filling" src="img/photo-ganash-mobile.png" width="413" height="226" alt="начинка">
+                </picture>
                 <span class="make-cake-list__page make-cake-list__page--filling">1/12</span>
               </div>
               <div class="make-cake-list__pagination make-cake-list__pagination--full pagination">
