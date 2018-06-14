@@ -101,7 +101,6 @@
 .make-cake-list__weight {
   &--one {
     .make-cake-list__text--kilo {
-
       &::after {
         content: "";
         position: absolute;
@@ -114,7 +113,21 @@
       }
     }
   }
-  &--two,
+
+  &--two {
+    display: none;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -44px;
+      right: 75px;
+      width: 120px;
+      height: 120px;
+      background-image: url("../img/diametr-2kg.png");
+      background-repeat: no-repeat;
+    }
+  }
   &--five,
   &--eight {
     display: none;
@@ -246,11 +259,22 @@
     &--weight {
       display: flex;
       justify-content: space-between;
+      width: 588px;
+      margin: 0 auto;
     }
   }
 
   .make-cake-list__weight {
     display: block;
+
+    &--one {
+      .make-cake-list__text--kilo {
+        &::after {
+          top: -45px;
+          right: -25px;
+        }
+      }
+    }
   }
 
   .make-cake-list__img {
@@ -285,7 +309,7 @@
     &--kilo {
       font-size: 11px;
       margin-top: 60px;
-      margin-bottom: 20px;
+      margin-bottom: 50px;
     }
 
     &--diameter {
@@ -310,6 +334,6 @@
 
     &--weight {
       display: none;
-    } 
+    }
   }
 }
