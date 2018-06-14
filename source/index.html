@@ -112,7 +112,7 @@
           <p class="individual__text">Соберите торт в 3 шага</p>
           <ul class="individual__list make-cake-list">
             <li class="make-cake-list__item make-cake-list__item--filling">
-              <p class="make-cake-list__stage"><span class="make-cake-list__number">01</span>Выберите начинку</p>
+              <p class="make-cake-list__stage make-cake-list__stage--filling"><span class="make-cake-list__number">01</span>Выберите начинку</p>
               <div class="make-cake-list__frame make-cake-list__frame--filling">
                 <picture>
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-ganash-tablet.png">
@@ -129,24 +129,40 @@
                 <span class="pagination__dot"></span>
                 <span class="pagination__dot pagination__dot--last"></span>
               </div>
-              <div class="make-cake-list__flex-wrapper">
+              <div class="make-cake-list__flex-wrapper make-cake-list__flex-wrapper--filling">
                 <h3 class="make-cake-list__title make-cake-list__title--filling">Шоколадный ганаш</h3>
-                <p class="make-cake-list__text">Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!</p>
+                <p class="make-cake-list__text make-cake-list__text--filling">Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!</p>
                 <span class="make-cake-list__price make-cake-list__price--filling">1000 руб/кг</span>
                 <button class="make-cake-list__button button-rose" type="button" aria-label="выбрать">Выбрать</button>
               </div>
             </li>
-            <li class="make-cake-list__item">
-              <p class="make-cake-list__stage"><span class="make-cake-list__number">02</span>Размер</p>
-              <span class="make-cake-list__weight">1 кг</span>
+            <li class="make-cake-list__item make-cake-list__item--weight">
+              <p class="make-cake-list__stage make-cake-list__stage--weight"><span class="make-cake-list__number">02</span>Размер</p>
+              <div class="make-cake-list__flex-wrapper make-cake-list__flex-wrapper--weight">
+                <div class="make-cake-list__weight make-cake-list__weight--one">
+                  <span class="make-cake-list__text make-cake-list__text--kilo">1 кг</span>
+                  <p class="make-cake-list__text make-cake-list__text--diameter">17-18 см <span class="make-cake-list__new-line">(1кг - 6 персон)</span></p>
+                </div>
+                <div class="make-cake-list__weight make-cake-list__weight--two">
+                  <span class="make-cake-list__text make-cake-list__text--kilo">2 кг</span>
+                  <p class="make-cake-list__text make-cake-list__text--diameter">23-24 см <span class="make-cake-list__new-line">(10-12 персон)</span></p>
+                </div>
+                <div class="make-cake-list__weight make-cake-list__weight--five">
+                  <span class="make-cake-list__text make-cake-list__text--kilo">5 кг</span>
+                  <p class="make-cake-list__text make-cake-list__text--diameter">Два яруса 25 и 20 см <span class="make-cake-list__new-line">(15-20 персон)</span></p>
+                </div>
+                <div class="make-cake-list__weight make-cake-list__weight--eight">
+                  <span class="make-cake-list__text make-cake-list__text--kilo">8 кг</span>
+                  <p class="make-cake-list__text make-cake-list__text--diameter">Три яруса 30, 25 и 18 см <span class="make-cake-list__new-line">(25-30 персон)</span></p>
+                </div>
+              </div>
               <div class="make-cake-list__pagination make-cake-list__pagination--short pagination">
                 <span class="pagination__dot pagination__dot--active"></span>
                 <span class="pagination__dot"></span>
                 <span class="pagination__dot"></span>
                 <span class="pagination__dot"></span>
               </div>
-              <p class="make-cake-list__text make-cake-list__text--diameter">17-18 см <span class="make-cake-list__new-line">(1кг - 6 персон)</span></p>
-              <button class="make-cake-list__button button-rose" type="button" aria-label="выбрать">Выбрать</button>
+              <button class="make-cake-list__button make-cake-list__button--weight button-rose" type="button" aria-label="выбрать">Выбрать</button>
             </li>
             <li class="make-cake-list__item">
               <p class="make-cake-list__stage"><span class="make-cake-list__number">03</span>Оформление</p>
