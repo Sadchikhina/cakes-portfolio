@@ -110,6 +110,7 @@
         height: 120px;
         background-image: url("../img/diametr-1kg.png");
         background-repeat: no-repeat;
+        background-size: cover;
       }
     }
   }
@@ -117,17 +118,19 @@
   &--two {
     display: none;
 
-    &::after {
-      content: "";
-      position: absolute;
-      top: -44px;
-      right: 75px;
-      width: 140px;
-      height: 140px;
-      background-image: url("../img/diametr-2kg.png");
-      background-repeat: no-repeat;
+    .make-cake-list__text--kilo {
+      &::after {
+        content: "";
+        position: absolute;
+        top: -44px;
+        right: 75px;
+        background-image: url("../img/diametr-2kg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
     }
   }
+
   &--five,
   &--eight {
     display: none;
@@ -258,7 +261,6 @@
 
     &--weight {
       display: flex;
-      justify-content: space-between;
       width: 588px;
       margin: 0 auto;
     }
@@ -266,12 +268,46 @@
 
   .make-cake-list__weight {
     display: block;
+    outline: 1px solid @black;
 
     &--one {
+      margin-top: 58px;
+      margin-right: 65px;
+
       .make-cake-list__text--kilo {
         &::after {
-          top: -45px;
-          right: -25px;
+          width: 77px;
+          height: 77px;
+          top: -31px;
+          right: 2px;
+        }
+      }
+    }
+
+    &--two {
+      margin-top: 40px;
+      margin-right: 60px;
+      width: 90px;
+
+      .make-cake-list__text--kilo {
+        &::after {
+          top: -46px;
+          right: -20px;
+          width: 107px;
+          height: 107px;
+        }
+      }
+    }
+
+    &--five {
+      margin-top: 33px;
+
+      .make-cake-list__text--kilo {
+        &::after {
+          top: -46px;
+          right: -20px;
+          width: 107px;
+          height: 107px;
         }
       }
     }
@@ -308,8 +344,8 @@
 
     &--kilo {
       font-size: 11px;
-      margin-top: 60px;
-      margin-bottom: 50px;
+      margin-top: 0;
+      margin-bottom: 43px;
     }
 
     &--diameter {
