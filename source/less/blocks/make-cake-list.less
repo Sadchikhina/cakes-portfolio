@@ -38,10 +38,10 @@
   margin: 0 auto;
 
   &--filling {
-  width: 241px;
-  height: 114px;
-  background-color: @rose-bg;
-  margin-bottom: 10px;
+   width: 241px;
+   height: 114px;
+   background-color: @rose-bg;
+   margin-bottom: 10px;
 }
 
   &--marshmellow {
@@ -49,6 +49,10 @@
     height: 204px;
     margin-bottom: 11px;
     box-shadow: 0 0 3px 2px @rose-bg;
+  }
+
+  &--berries {
+    display: none;
   }
 }
 
@@ -60,7 +64,7 @@
     left: -1px;
   }
 
-  &--topping {
+  &--marshmellow {
     bottom: -72px;
     left: -13px;
   }
@@ -105,7 +109,9 @@
         content: "";
         position: absolute;
         top: -44px;
-        right: 75px;
+        right: 85px;
+        width: 110px;
+        height: 110px;
         background-image: url("../img/diametr-1kg.png");
         background-repeat: no-repeat;
         background-size: cover;
@@ -288,6 +294,19 @@
       margin-left: 0;
       margin-right: 26px;
     }
+
+    &--berries {
+      display: block;
+      width: 201px;
+      height: 262px;
+      box-shadow: 0 4px 10px -1px @grey-light;
+    }
+
+    &--marshmellow {
+      width: 201px;
+      height: 262px;
+      box-shadow: 0 4px 10px -1px @grey-light;
+    }
   }
 
   .make-cake-list__flex-wrapper {
@@ -300,6 +319,10 @@
       display: flex;
       width: 588px;
       margin: 0 auto;
+    }
+
+    &--topping {
+      display: flex;
     }
   }
 
