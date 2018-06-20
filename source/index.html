@@ -164,11 +164,15 @@
               </div>
               <button class="make-cake-list__button make-cake-list__button--weight button-rose" type="button" aria-label="выбрать">Выбрать</button>
             </li>
-            <li class="make-cake-list__item">
+            <li class="make-cake-list__item make-cake-list__item--topping">
               <p class="make-cake-list__stage make-cake-list__stage--topping"><span class="make-cake-list__number">03</span>Оформление</p>
               <div class="make-cake-list__flex-wrapper  make-cake-list__flex-wrapper--topping">
                 <div class="make-cake-list__frame make-cake-list__frame--berries">
                   <img class="make-cake-list__img make-cake-list__img--berries" src="img/photo-berries-tablet.jpg" alt="начинка">
+                </div>
+                <div class="make-cake-list__description make-cake-list__description--berries">
+                  <h3 class="make-cake-list__title make-cake-list__title--topping">Ягодное ассорти</h3>
+                  <span class="make-cake-list__price make-cake-list__price--topping">700 руб/кг</span>
                 </div>
                 <div class="make-cake-list__frame make-cake-list__frame--marshmellow">
                   <picture>
@@ -177,8 +181,12 @@
                     <source media="(min-width: 768px)" srcset="img/photo-marshmellow-tablet.jpg">
                     <img class="make-cake-list__img make-cake-list__img--marshmellow" src="img/photo-marshmellow-mobile.jpg" alt="начинка">
                   </picture>
-                  <span class="make-cake-list__page make-cake-list__page--topping">1/35</span>
                 </div>
+                <div class="make-cake-list__description make-cake-list__description--marshmellow">
+                  <h3 class="make-cake-list__title make-cake-list__title--topping">Маршмеллоу</h3>
+                  <span class="make-cake-list__price make-cake-list__price--topping">600 руб/кг</span>
+                </div>
+                <span class="make-cake-list__page make-cake-list__page--topping">1/35</span>
               </div>
               <div class="make-cake-list__pagination make-cake-list__pagination--full pagination">
                 <span class="pagination__dot pagination__dot--active"></span>
@@ -187,26 +195,26 @@
                 <span class="pagination__dot"></span>
                 <span class="pagination__dot pagination__dot--last"></span>
               </div>
-              <h3 class="make-cake-list__title make-cake-list__title--topping">Маршмеллоу</h3>
-              <span class="make-cake-list__price make-cake-list__price--topping">600 руб/кг</span>
-              <button class="make-cake-list__button button-rose" type="button" aria-label="выбрать">Выбрать</button>
+              <button class="make-cake-list__button make-cake-list__button--topping button-rose" type="button" aria-label="выбрать">Выбрать</button>
             </li>
           </ul>
           <form class="choice-form" action="index.html" method="get">
             <label class="choice-form__label">Ваш выбор</label>
-            <p class="choice-form__input choice-form__input--filling">
-              <label class="choice-form__input-label choice-form__input-label--filling" for="filling">Начинка</label>
-              <input class="choice-form__field choice-form__field--filling" type="text" name="filling-field" id="filling" value="Шоколадный ганаш">
-            </p>
-            <p class="choice-form__input choice-form__input--size">
-              <label class="choice-form__input-label choice-form__input-label--size" for="size">Размер</label>
-              <input class="choice-form__field choice-form__field--size" type="text" name="size-field" id="size" value="1 кг">
-            </p>
-            <p class="choice-form__input choice-form__input--topping">
-              <label class="choice-form__input-label choice-form__input-label--topping" for="topping">Оформление</label>
-              <input class="choice-form__field choice-form__field--topping" type="text" name="topping-field" id="topping" value="Маршмеллоу">
-            </p>
-            <button  class="choice-form__button button-rose" type="submit" name="order" aria-label="заказать">Заказать торт</button>
+            <div class="choice-form__wrapper">
+              <p class="choice-form__input choice-form__input--filling">
+                <label class="choice-form__input-label choice-form__input-label--filling" for="filling">Начинка</label>
+                <input class="choice-form__field choice-form__field--filling" type="text" name="filling-field" id="filling" value="Шоколадный ганаш">
+              </p>
+              <p class="choice-form__input choice-form__input--size">
+                <label class="choice-form__input-label choice-form__input-label--size" for="size">Размер</label>
+                <input class="choice-form__field choice-form__field--size" type="text" name="size-field" id="size" value="1 кг">
+              </p>
+              <p class="choice-form__input choice-form__input--topping">
+                <label class="choice-form__input-label choice-form__input-label--topping" for="topping">Оформление</label>
+                <input class="choice-form__field choice-form__field--topping" type="text" name="topping-field" id="topping" value="Маршмеллоу">
+              </p>
+              <button  class="choice-form__button button-rose" type="submit" name="order" aria-label="заказать">Заказать торт</button>
+            </div>            
           </form>
         </section>
         <section class="opinion">

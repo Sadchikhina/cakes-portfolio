@@ -70,17 +70,25 @@
   }
 }
 
+.make-cake-list__description {
+  &--berries {
+    display: none;
+  }
+}
+
 .make-cake-list__page {
   position: absolute;
-  bottom: 5px;
-  right: 5px;
 
   &--filling {
     color: @white;
+    bottom: 5px;
+    right: 5px;
   }
 
   &--topping {
     color: @black;
+    top: 230px;
+    left: 190px;
   }
 }
 
@@ -259,7 +267,19 @@
     }
 
     &--topping {
+      position: relative;
       margin-top: 37px;
+      margin-right: 80px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 90px;
+        left: -40px;
+        width: 119px;
+        height: 157px;
+        background-image: url("../img/icon-cake-tablet.png");
+      }
     }
   }
 
@@ -283,6 +303,7 @@
 
     &--topping {
       position: relative;
+      display: flex;
     }
   }
 
@@ -300,6 +321,7 @@
       width: 201px;
       height: 262px;
       box-shadow: 0 4px 10px -1px @grey-light;
+      margin-right: 25px;
     }
 
     &--marshmellow {
@@ -322,7 +344,9 @@
     }
 
     &--topping {
+      position: relative;
       display: flex;
+      margin-top: 40px;
     }
   }
 
@@ -399,12 +423,42 @@
       bottom: -12px;
       left: -22px;
     }
+
+    &--berries {
+      top: -40px;
+      left: -20px;
+    }
+
+    &--marshmellow {
+      top: -30px;
+      left: -20px;
+    }
+  }
+
+  .make-cake-list__description {
+    position: absolute;
+
+    &--berries {
+      display: block;
+      top: 190px;
+      left: 50px;
+    }
+
+    &--marshmellow {
+      top: 190px;
+      left: 280px;
+    }
   }
 
   .make-cake-list__page {
     &--filling {
       color: @black;
       left: 190px;
+    }
+
+    &--topping {
+      top: 250px;
+      left: 460px;
     }
   }
 
@@ -450,6 +504,10 @@
     margin-left: 1px;
 
     &--weight {
+      display: none;
+    }
+
+    &--topping {
       display: none;
     }
   }
