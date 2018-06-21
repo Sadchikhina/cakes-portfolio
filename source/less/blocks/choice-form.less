@@ -74,19 +74,23 @@
     width: 100%;
     box-shadow: 0 2px 1px 1px @rose-light-shadow;
     z-index: 1;
+    outline: 1px solid @black;
   }
 
   .choice-form__label {
-    margin-left: 26px;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 0;
+    margin: 0;
+    margin-left: 32px;
   }
 
   .choice-form__wrapper {
     display: flex;
-    justify-content: space-between;
     align-items: flex-end;
-    width: 637px;
-    height: 60px;
+    width: 644px;
     margin: 0 auto;
+    padding-left: 7px;
   }
 
   .choice-form__field {
@@ -105,6 +109,18 @@
 
   .choice-form__input {
     margin: 0;
+
+    &--filling {
+      margin-right: 20px;
+    }
+
+    &--size {
+      margin-right: 20px;
+    }
+
+    &--topping {
+      margin-right: 30px;
+    }
   }
 
   .choice-form__input-label {
@@ -113,6 +129,7 @@
   }
 
   .choice-form__button {
-    width: 160px;
+    height: 42px;
+
   }
 }
