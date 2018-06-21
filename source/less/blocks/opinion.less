@@ -12,7 +12,7 @@
   margin-bottom: 16px;
 }
 
-.opinion__frame {
+.opinion__frame-circle {
   position: relative;
   width: 59px;
   height: 59px;
@@ -79,5 +79,49 @@
 
   .pagination__dot:not(.pagination__dot--active) {
     background-color: @white;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .opinion {
+    width: 729px;
+  }
+
+  .opinion__title {
+    position: relative;
+    font-size: 29px;
+    margin-bottom: 20px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 317px;
+      height: 168px;
+      background-image: url("../img/ribbon-tablet.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      outline: 1px solid @black;
+    }
+  }
+
+  .opinion__wrapper {
+    display: flex;
+    width: 586px;
+    margin: 0 auto;
+  }
+
+  .opinion__frame-circle {
+    width: 108px;
+    height: 108px;
+    margin: 0;
+    margin-top: 29px;
+    margin-right: 24px;
+    margin-left: 92px;
+  }
+
+  .opinion__description {
+    text-align: left;
   }
 }

@@ -4,7 +4,6 @@
   padding-left: 14px;
   padding-right: 22px;
   padding-bottom: 34px;
-  margin-bottom: 39px;
   background-color: @white;
 }
 
@@ -74,7 +73,7 @@
     width: 100%;
     box-shadow: 0 2px 1px 1px @rose-light-shadow;
     z-index: 1;
-    outline: 1px solid @black;
+    padding-bottom: 44px
   }
 
   .choice-form__label {
@@ -89,6 +88,7 @@
     display: flex;
     align-items: flex-end;
     width: 644px;
+    height: 68px;
     margin: 0 auto;
     padding-left: 7px;
   }
@@ -126,10 +126,14 @@
   .choice-form__input-label {
     text-align: left;
     margin-bottom: 10px;
+
+    &--size {
+      margin-left: 8px;
+    }
   }
 
   .choice-form__button {
-    height: 42px;
-
+    height: 43px;
+    font-size: 11px;
   }
 }
