@@ -10,3 +10,40 @@
   margin-top: 12px;
   margin-bottom: 9px;
 }
+
+.about-confection__text {
+  font-size: @small-size;
+  padding: 0;
+  margin: 0;
+
+  &--quotation {
+    position: relative;
+    font-size: @regular-size;
+    line-height: 16px;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    padding-bottom: 50px;
+
+    &::after {
+      content: "";
+      width: 65px;
+      height: 31px;
+      position: absolute;
+      bottom: 1px;
+      left: 104px;
+      background-image: url("../img/signature.png");
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.about-confection__marks {
+  display: block;
+  width: 40px;
+  height: 20px;
+  font-size: 74px;
+  color: @white;
+  margin: 0 auto;
+  margin-bottom: 38px;
+}
