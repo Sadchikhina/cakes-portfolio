@@ -32,6 +32,12 @@
   margin-right: 11px;
 }
 
+.make-cake-list__flex-wrapper {
+  &--topping {
+    position: relative;
+  }
+}
+
 .make-cake-list__frame {
   position: relative;
   overflow: hidden;
@@ -71,8 +77,15 @@
 }
 
 .make-cake-list__description {
+  position: absolute;
+
   &--berries {
     display: none;
+  }
+
+  &--marshmellow {
+    top: 223px;
+    left: 90px;
   }
 }
 
@@ -87,8 +100,8 @@
 
   &--topping {
     color: @black;
-    top: 230px;
-    left: 190px;
+    top: 181px;
+    left: 196px;
   }
 }
 
@@ -246,6 +259,10 @@
   display: block;
   width: 180px;
   margin: 0 auto;
+
+  &--topping {
+    margin-top: 86px;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -349,7 +366,6 @@
     }
 
     &--topping {
-      position: relative;
       display: flex;
       margin-top: 40px;
     }
@@ -441,8 +457,6 @@
   }
 
   .make-cake-list__description {
-    position: absolute;
-
     &--berries {
       display: block;
       top: 192px;
