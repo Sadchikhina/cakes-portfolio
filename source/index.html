@@ -284,7 +284,7 @@
           <h2 class="advantages__title">Наши преимущества</h2>
           <p class="advantages__details">Почему нас выбирают?</p>
           <div class="advantages__flex-wrapper">
-            <img class="advantages__img advantages__img--berries" src="img/bg-berries-tablet.png" width="303" height="319" alt="ягоды">
+            <img class="advantages__img advantages__img--berries" src="img/bg-berries-tablet.png" width="273" height="290" alt="ягоды">
             <ul class="advantages__list advantages-list">
               <li class="advantages-list__item advantages-list__item--ingredients">
                 <h3 class="advantages-list__title advantages-list__title--ingredients">Без искусственых добавок</h3>
@@ -302,7 +302,12 @@
             </div>
             <div class="advantages__pic-wrapper">
               <span class="advantages__plate"></span>
-              <img class="advantages__img advantages__img--cake" src="img/bg-mobile-cake-bottom.png" width="333" height="325" alt="тортик">
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-tablet-cake-bottom.png">
+                <source type="image/webp" srcset="img/bg-mobile-cake-bottom.png">
+                <source media="(min-width: 768px)" srcset="img/bg-tablet-cake-bottom.png">
+                <img class="advantages__img advantages__img--cake" src="img/bg-mobile-cake-bottom.png" alt="тортик">
+              </picture>              
             </div>
           </div>
         </section>
