@@ -62,7 +62,7 @@
 
 @media (min-width: @tablet-width) {
   .advantages {
-    padding-bottom: 155px;
+    padding-bottom: 128px;
   }
 
   .advantages__flex-wrapper {
@@ -82,22 +82,35 @@
 
 
   .advantages__pic-wrapper {
-    overflow: visible;
+    overflow: hidden;
+    width: 390px;
+    height: 425px;
+    outline: 1px solid @black;
+
+    &::before {
+      top: -60px;
+      left: -76px;
+      width: 461px;
+      height: 452px;
+      background-image: url("../img/snow.png");
+    }
+  }
+
+  .advantages__plate {
+    display: none;
   }
 
   .advantages__img {
     &--berries {
       display: block;
       margin-top: -6px;
-      margin-right: 150px;
+      margin-right: 167px;
     }
 
     &--cake {
       position: relative;
-      top: -34px;
-      left: -20px;
-      width: 326px;
-      height: 315px;
+      top: -17px;
+      left: -17px;
     }
   }
 }
