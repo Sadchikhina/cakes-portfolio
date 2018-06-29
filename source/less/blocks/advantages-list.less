@@ -63,5 +63,42 @@
 @media (min-width: @tablet-width) {
   .advantages-list {
     background-color: @rose-bg;
+    width: 285px;
+    text-align: left;
+  }
+
+  .advantages-list__text {
+    &--ingredients {
+      padding: 0;
+    }
+
+    &--fresh {
+      padding: 0;
+    }
+  }
+
+  .advantages-list__item {
+    &--ingredients {
+      &::before {
+        top: -73px;
+        left: 130px;
+        width: 48px;
+        height: 48px;
+        background-image: url("../img/icon-ingredient-tablet.png");
+        background-repeat: no-repeat;
+      }
+    }
+
+    &--fresh {
+      &::before {
+        top: 12px;
+        left: 118px;
+        width: 63px;
+        height: 38px;
+        background-image: url("../img/icon-24-tablet.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
   }
 }
