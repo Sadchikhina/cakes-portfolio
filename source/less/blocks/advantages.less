@@ -62,34 +62,83 @@
 
 @media (min-width: @tablet-width) {
   .advantages {
-    padding-bottom: 128px;
+    padding-bottom: 130px;
   }
 
   .advantages__flex-wrapper {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
   }
 
   .advantages__title {
+    position: relative;
     font-size: 28px;
     margin-bottom: 7px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 55px;
+      left: -10px;
+      width: 47px;
+      height: 47px;
+      background-image: url("../img/icon-raspberry.png");
+      background-size: cover;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 7px;
+      left: 55px;
+      width: 56px;
+      height: 68px;
+      background-image: url("../img/icon-mint-1.png");
+      background-size: cover;
+    }
   }
 
   .advantages__details {
+    position: relative;
     font-size: 20px;
     margin-bottom: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -17px;
+      left: 160px;
+      width: 36px;
+      height: 29px;
+      background-image: url("../img/icon-cherry.png");
+      background-size: cover;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 273px;
+      left: 213px;
+      width: 94px;
+      height: 74px;
+      background-image: url("../img/icon-mint-2.png");
+      background-size: cover;
+    }
   }
 
 
   .advantages__pic-wrapper {
+    position: absolute;
+    top: 228px;
+    right: 0;
+    width: 420px;
+    height: 413px;
     overflow: hidden;
-    width: 390px;
-    height: 425px;
-    outline: 1px solid @black;
 
     &::before {
-      top: -60px;
-      left: -76px;
+      top: 0;
+      left: 0;
       width: 461px;
       height: 452px;
       background-image: url("../img/snow.png");
@@ -109,8 +158,8 @@
 
     &--cake {
       position: relative;
-      top: -17px;
-      left: -17px;
+      top: 40px;
+      left: 58px;
     }
   }
 }
