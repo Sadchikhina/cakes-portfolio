@@ -84,10 +84,17 @@
 @media (min-width: @tablet-width) {
   .contacts {
     display: flex;
-    justify-content: space-between;
     background-image: url("../img/bg-straberry-tablet.png");
-    width: 675px;
-    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: 310px bottom;
+    width: 100%;
+    padding-left: 47px;
+    margin-bottom: 0;
+    padding-bottom: 85px;
+  }
+
+  .contacts__flex-wrapper {
+    margin-right: 66px;
   }
 
   .contacts__title {
@@ -107,5 +114,22 @@
 
   .contacts__new-line {
     display: block;
+  }
+
+  .contacts__list {
+    font-size: 13px;
+    margin-top: 75px;
+  }
+
+  .contacts__tel {
+    margin-bottom: 18px;
+  }
+
+  .contacts__email {
+    margin-bottom: 16px;
+  }
+
+  .contacts__intro {
+    margin-bottom: 22px;
   }
 }
