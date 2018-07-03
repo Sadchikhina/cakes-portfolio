@@ -329,15 +329,17 @@
           </ul>
         </section>
         <section class="contacts">
-          <h2 class="contacts__title">Контакты</h2>
-          <p class="contacts__text">Остались вопросы?</p>
-          <p class="contacts__intsruction">Заполните форму ниже и наш кондитер свяжется с Вами</p>
-          <form class="feedback-form" action="#" method="get">
-            <input class="feedback-form__input feedback-form__input--name" type="text" name="yourname" placeholder="Ваше имя">
-            <input class="feedback-form__input feedback-form__input--email" type="email" name="youremail" placeholder="Email адрес">
-            <textarea class="feedback-form__input feedback-form__input--question" name="yourquestion">Ваш вопрос</textarea>
-            <button class="feedback-form__button button-rose" type="submit" name="send-button">Отправить</button>
-          </form>
+          <div class="contacts__flex-box">
+            <h2 class="contacts__title">Контакты</h2>
+            <p class="contacts__text">Остались вопросы?</p>
+            <p class="contacts__intsruction">Заполните форму ниже и наш кондитер <span class="contacts__new-line">свяжется с Вами</span></p>
+            <form class="feedback-form" action="#" method="get">
+              <input class="feedback-form__input feedback-form__input--name" type="text" name="yourname" placeholder="Ваше имя">
+              <input class="feedback-form__input feedback-form__input--email" type="email" name="youremail" placeholder="Email адрес">
+              <textarea class="feedback-form__input feedback-form__input--question" name="yourquestion">Ваш вопрос</textarea>
+              <button class="feedback-form__button button-rose" type="submit" name="send-button">Отправить</button>
+            </form>
+          </div>
           <ul class="contacts__list">
             <li class="contacts__tel">Или позвоните по телефону: <br> <a class="contacts__link" href="tel:+79068999296">+7 906 899 92 96</a></li>
             <li class="contacts__email">Наша почта: <a class="contacts__link" href="mailto:bakerybypavel@mail.ru">bakerybypavel@mail.ru</a></li>
