@@ -68,6 +68,45 @@
 }
 
 @media (min-width: @tablet-width) {
+  .instruction-list {
+    padding-left: 303px;
+  }
+
+  .instruction-list__item {
+    &--term {
+      margin-bottom: 28px;
+    }
+
+    &--city {
+      margin-bottom: 29px;
+    }
+  }
+
+  .instruction-list__title {
+    &--term {
+      margin-bottom: 3px;
+
+      &::before {
+        top: -14px;
+        left: -40px;
+      }
+    }
+
+    &--city {
+      &::before {
+        top: -18px;
+        left: -40px;
+      }
+    }
+
+    &--country {
+      &::before {
+        top: -18px;
+        left: -42px;
+      }
+    }
+  }
+
   .instruction-list__new-line {
     display: block;
   }
