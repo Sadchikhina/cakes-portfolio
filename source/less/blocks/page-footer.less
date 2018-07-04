@@ -50,3 +50,35 @@
   margin-left: 1px;
   margin-top: 30px;
 }
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+
+  .page-footer__logo {
+    font-size: 19px;
+    margin-right: 59px;
+  }
+
+  .page-footer__list {
+    order: 5;
+
+    &::after {
+      bottom: 41px;
+      left: -340px;
+      width: 636px;
+    }
+  }
+
+  .page-footer__copyright {
+    margin-left: 268px;
+    margin-right: 46px;
+    margin-top: 0;
+    align-self: center;
+  }
+}
