@@ -84,6 +84,7 @@
 
 @media (min-width: @tablet-width) {
   .opinion {
+    position: relative;
     width: 100%;
     padding-top: 36px;
     margin-bottom: 110px;
@@ -163,5 +164,19 @@
   .opinion__pages {
     bottom: -19px;
     right: -20px;
+  }
+
+  .opinion__arrow {
+    padding: 0;
+
+    &--back {
+      bottom: 64px;
+      left: 90px;
+    }
+
+    &--forward {
+      bottom: 64px;
+      right: 90px;
+    }
   }
 }

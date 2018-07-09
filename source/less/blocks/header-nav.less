@@ -35,3 +35,21 @@
     display: none;
   }
 }
+
+@media (min-width: @desctop-width) {
+  .header-nav {
+    display: flex;
+    justify-content: space-between;
+    position: inherit;
+    width: 748px;
+    height: 0;
+    font-size: @small-size;
+    text-transform: uppercase;
+    background-color: @rose-bg;
+    margin-right: 50px;
+  }
+
+  .header-nav__item {
+    border: none;
+  }
+}
