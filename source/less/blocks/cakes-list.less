@@ -151,4 +151,21 @@
     left: 25px;
     top: 21px;
   }
+
+  @media (min-width: @desctop-width) {
+    .cakes-list {
+      max-width: 100%;
+    }
+
+    .cakes-list__item {
+      width: 485px;
+      height: 305px;
+
+      &--classic,
+      &--kid {
+        width: 695px;
+        height: 652px;
+      }
+    }
+  }
 }
