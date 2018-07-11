@@ -51,10 +51,8 @@
   }
 
   .cakes-order__frame {
-    position: absolute;
     width: @tablet-width;
     height: 582px;
-    overflow: hidden;
   }
 
   .cakes-order__bg {
@@ -134,8 +132,18 @@
 
 @media (min-width: @desctop-width) {
   .cakes-order {
-    padding-bottom: 240px;
+    padding-bottom: 174px;
     margin-bottom: 0;
+  }
+
+  .cakes-order__frame {
+    width: @desctop-width;
+    height: 940px;
+  }
+
+  .cakes-order__bg {
+    top: -3px;
+    left: 591px;
   }
 
   .cakes-order__wrapper {
