@@ -30,6 +30,16 @@
       </header>
       <main class="page-main">
         <section class="cakes-order">
+          <div class="cakes-order__frame">
+            <picture>
+              <source type="image/webp" media="(min-width: 1366px)" srcset="img/bg-desctop-cake.png">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-tablet-cake.png">
+              <source type="image/webp" srcset="img/bg-mobile-cake.png">
+              <source media="(min-width: 1366px)" srcset="img/bg-desctop-cake.png">
+              <source media="(min-width: 768px)" srcset="img/bg-tablet-cake.png">
+              <img class="cakes-order__bg" src="img/bg-mobile-cake.png" alt="тортик">
+            </picture>
+          </div>
           <div class="cakes-order__wrapper">
             <h1 class="cakes-order__title">Торты <br> на заказ</h1>
             <p class="cakes-order__text">Ручная работа</p>

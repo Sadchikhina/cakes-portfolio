@@ -1,11 +1,22 @@
 .cakes-order {
-  background-image: url("../img/bg-mobile-cake.png");
-  background-repeat: no-repeat;
-  background-position: -34px -211px;
   margin-bottom: 27px;
 }
 
+.cakes-order__frame {
+  position: absolute;
+  width: 320px;
+  height: 175px;
+  overflow: hidden;
+}
+
+.cakes-order__bg {
+  position: absolute;
+  top: -210px;
+  left: -35px;
+}
+
 .cakes-order__wrapper {
+  position: relative;
   padding-top: 128px;
   width: 226px;
   margin: 0 auto;
@@ -36,13 +47,22 @@
 
 @media (min-width: @tablet-width) {
   .cakes-order {
-    background-image: url("../img/bg-tablet-cake.png");
-    background-position: 328px 9px;
     margin-bottom: 65px;
   }
 
+  .cakes-order__frame {
+    position: absolute;
+    width: @tablet-width;
+    height: 582px;
+    overflow: hidden;
+  }
+
+  .cakes-order__bg {
+    top: 9px;
+    left: 328px;
+  }
+
   .cakes-order__wrapper {
-    position: relative;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -114,8 +134,6 @@
 
 @media (min-width: @desctop-width) {
   .cakes-order {
-    background-image: url("../img/bg-desctop-cake.png");
-    background-position: 592px -4px;
     padding-bottom: 240px;
     margin-bottom: 0;
   }
