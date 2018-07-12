@@ -567,13 +567,28 @@
   .make-cake-list__item {
     &--filling {
       padding-left: 0;
+      padding-bottom: 82px;
+      margin-bottom: 35px;
+
+      .make-cake-list__arrow {
+        &--back {
+          top: 262px;
+          left: 180px;
+        }
+
+        &--forward {
+          top: 262px;
+          right: 110px;
+        }
+      }
     }
   }
 
   .make-cake-list__stage {
+    font-size: 26px;
+    line-height: 29px;
+
     &--filling {
-      font-size: 26px;
-      line-height: 29px;
       margin-top: 65px;
       margin-right: 124px;
       margin-left: 82px;
@@ -581,8 +596,9 @@
   }
 
   .make-cake-list__number {
+    font-size: 58px;
+
     &--filling {
-      font-size: 58px;
       margin-bottom: 22px;
     }
   }
@@ -592,6 +608,58 @@
       width: 343px;
       height: 391px;
       margin-top: 86px;
+    }
+  }
+
+  .make-cake-list__img {
+    &--filling {
+      bottom: -21px;
+      left: -37px;
+    }
+  }
+
+  .make-cake-list__flex-wrapper {
+    &--filling {
+      width: 290px;
+      margin-top: 134px;
+      margin-left: 16px;
+    }
+  }
+
+  .make-cake-list__title {
+    &--filling {
+      font-size: 17px;
+      margin-bottom: 5px;
+    }
+  }
+
+  .make-cake-list__text {
+    &--filling {
+      font-size: 15px;
+      line-height: 24px;
+      margin-bottom: 16px;
+    }
+  }
+
+  .make-cake-list__price {
+    &--filling {
+      font-size: 21px;
+      margin-bottom: 49px;
+    }
+  }
+
+  .make-cake-list__button {
+    &--filling {
+      width: 180px;
+      height: 51px;
+    }
+  }
+
+  .make-cake-list__page {
+    &--filling {
+      font-size: 20px;
+      top: 455px;
+      right: 125px;
     }
   }
 }
