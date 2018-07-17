@@ -218,7 +218,12 @@
               <p class="make-cake-list__stage make-cake-list__stage--topping"><span class="make-cake-list__number make-cake-list__number--topping">03</span>Оформление</p>
               <div class="make-cake-list__flex-wrapper make-cake-list__flex-wrapper--topping">
                 <div class="make-cake-list__frame make-cake-list__frame--berries">
-                  <img class="make-cake-list__img make-cake-list__img--berries" src="img/photo-berries-tablet.jpg" alt="начинка">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1366px)" srcset="img/photo-berries-desctop.jpg">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-berries-tablet.jpg">
+                    <source media="(min-width: 1366px)" srcset="img/photo-berries-desctop.jpg">
+                    <img class="make-cake-list__img make-cake-list__img--berries" src="img/photo-berries-tablet.jpg" alt="украшение-ягоды">
+                  </picture>
                 </div>
                 <div class="make-cake-list__description make-cake-list__description--berries">
                   <h3 class="make-cake-list__title make-cake-list__title--topping">Ягодное ассорти</h3>
@@ -226,10 +231,12 @@
                 </div>
                 <div class="make-cake-list__frame make-cake-list__frame--marshmellow">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1366px)" srcset="img/photo-marshmellow-desctop.jpg">
                     <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-marshmellow-tablet.jpg">
                     <source type="image/webp" srcset="img/photo-marshmellow-mobile.jpg">
+                    <source media="(min-width: 1366px)" srcset="img/photo-marshmellow-desctop.jpg">
                     <source media="(min-width: 768px)" srcset="img/photo-marshmellow-tablet.jpg">
-                    <img class="make-cake-list__img make-cake-list__img--marshmellow" src="img/photo-marshmellow-mobile.jpg" alt="начинка">
+                    <img class="make-cake-list__img make-cake-list__img--marshmellow" src="img/photo-marshmellow-mobile.jpg" alt="украшение-маршмеллоу">
                   </picture>
                 </div>
                 <div class="make-cake-list__description make-cake-list__description--marshmellow">

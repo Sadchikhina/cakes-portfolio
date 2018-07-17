@@ -109,6 +109,7 @@
 
   .choice-form__input {
     margin: 0;
+    margin-bottom: 18px;
 
     &--filling {
       margin-right: 20px;
@@ -135,5 +136,71 @@
   .choice-form__button {
     height: 43px;
     font-size: 11px;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .choice-form {
+    max-width: 1220px;
+  }
+
+  .choice-form__label {
+    font-size: 28px;
+    margin-left: 59px;
+  }
+
+  .choice-form__wrapper {
+    width: 1065px;
+    height: auto;
+    padding-top: 8px;
+    padding-left: 0;
+    outline: 1px solid @black;
+  }
+
+  .choice-form__input {
+    &--filling {
+      margin-right: 70px;
+    }
+
+    &--size {
+      margin-right: 85px;
+    }
+
+    &--topping {
+      margin-right: 18px;
+    }
+  }
+
+  .choice-form__field {
+    font-size: 16px;
+    text-align: left;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 1px solid @grey-light;
+
+    &--filling {
+      width: 255px;
+    }
+
+    &--size {
+      width: 140px;
+    }
+
+    &--topping {
+      width: 248px;
+    }
+  }
+
+  .choice-form__input-label {
+    font-size: 21px;
+
+    &--size {
+      margin-left: 8px;
+    }
+  }
+
+  .choice-form__button {
+    width: 226px;
+    height: 51px;
   }
 }
