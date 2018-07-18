@@ -180,3 +180,32 @@
     }
   }
 }
+
+@media (min-width: @desctop-width) {
+  .opinion {
+    width: 100%;
+    padding-top: 100px;
+  }
+
+  .opinion__title {
+    font-size: 42px;
+
+    &::before {
+      top: -99px;
+      left: 445px;
+      width: 557px;
+      height: 149px;
+      background-image: url("../img/ribbon-desctop.png");
+      background-position: 5px 10px;
+    }
+
+    &::after {
+      top: -99px;
+      left: 0;
+      width: 557px;
+      height: 149px;
+      background-image: url("../img/ribbon-desctop.png");
+      background-position: 5px 10px;
+    }
+  }
+}
