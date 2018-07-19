@@ -328,12 +328,12 @@
             <div class="about-confection">
               <h3 class="about-confection__title">О кондитере</h3>
               <ul class="about-confection__list biography-list">
-                <li class="biography-list__item">
+                <li class="biography-list__item biography-list__item--confection">
                   <p class="biography-list__title">Кондитер - как призвание</p>
                   <p class="biography-list__text">Павел — профессиональный повар в различных гастрономических областях, но однажды его сердце покорило кондитерское искусство.</p>
                   <p class="biography-list__text">С ранних лет он увлекался утонченным мастерством и обратился к своим талантам как кондитер.</p>
                 </li>
-                <li class="biography-list__item">
+                <li class="biography-list__item biography-list__item--principle">
                   <p class="biography-list__title">Принцип - натуральные ингридиенты</p>
                   <p class="biography-list__text">Сегодня Павел радует изделиями не только близких, но и тех, кто предпочитает качественную продукцию для торжества, а главным принципом является выбор натуральных ингредиентов. </p>
                 </li>
@@ -349,7 +349,13 @@
           <h2 class="advantages__title">Наши преимущества</h2>
           <p class="advantages__details">Почему нас выбирают?</p>
           <div class="advantages__flex-wrapper">
-            <img class="advantages__img advantages__img--berries" src="img/bg-berries-tablet.png" width="273" height="290" alt="ягоды">
+            <picture>
+              <source type="image/webp" media="(min-width: 1366px)" srcset="img/bg-berries-desctop.png">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-berries-tablet.png">
+              <source media="(min-width: 1366px)" srcset="img/bg-berries-desctop.jpg">
+              <img class="advantages__img advantages__img--berries" src="img/bg-berries-tablet.png" alt="ягоды">
+            </picture>
+
             <ul class="advantages__list advantages-list">
               <li class="advantages-list__item advantages-list__item--ingredients">
                 <h3 class="advantages-list__title advantages-list__title--ingredients">Без искусственых добавок</h3>
@@ -368,10 +374,12 @@
             <div class="advantages__pic-wrapper">
               <span class="advantages__plate"></span>
               <picture>
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-tablet-cake-bottom.png">
-                <source type="image/webp" srcset="img/bg-mobile-cake-bottom.png">
-                <source media="(min-width: 768px)" srcset="img/bg-tablet-cake-bottom.png">
-                <img class="advantages__img advantages__img--cake" src="img/bg-mobile-cake-bottom.png" alt="тортик">
+                <source type="image/webp" media="(min-width: 1366px)" srcset="img/bg-cake-bottom-desctop.png">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-cake-bottom-tablet.png">
+                <source type="image/webp" srcset="img/bg-cake-bottom-mobile.png">
+                <source media="(min-width: 1366px)" srcset="img/bg-cake-bottom-desctop.png">
+                <source media="(min-width: 768px)" srcset="img/bg-cake-bottom-tablet.png">
+                <img class="advantages__img advantages__img--cake" src="img/bg-cake-bottom-mobile.png" alt="тортик">
               </picture>
             </div>
           </div>

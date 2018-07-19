@@ -3,11 +3,11 @@
 }
 
 .biography-list__item {
-  &:first-of-type {
+  &--confection {
   margin-bottom: 14px;
  }
 
- &:nth-child(2) {
+ &--principle {
    margin-bottom: 13px;
  }
 }
@@ -34,12 +34,12 @@
   .biography-list__item {
     margin-left: 1px;
 
-    &:first-of-type {
+    &--confection {
     width: 335px;
     margin-bottom: 8px;
    }
 
-   &:nth-child(2) {
+   &--principle {
      width: 380px;
      margin-bottom: 0;
    }
@@ -52,8 +52,30 @@
 }
 
 @media (min-width: @desctop-width) {
+  .biography-list {
+    margin-bottom: 20px;
+  }
+
+  .biography-list__item {
+    margin-left: 2px;
+
+    &--confection {
+    width: 530px;
+    margin-bottom: 18px;
+   }
+
+   &--principle {
+     width: 510px;
+   }
+  }
+
   .biography-list__title {
     font-size: 16px;
     margin-bottom: 8px;
+  }
+
+  .biography-list__text {
+    font-size: 16px;
+    line-height: 24px;
   }
 }
