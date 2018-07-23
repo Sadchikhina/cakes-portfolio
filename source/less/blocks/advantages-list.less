@@ -110,9 +110,34 @@
 @media (min-width: @desctop-width) {
   .advantages-list {
     padding-top: 129px;
+    margin-right: 100px;
+  }
+
+  .advantages-list__item {
+    font-size: 17px;
+
+    &--ingredients {
+      width: 400px;
+      margin-bottom: 27px;
+
+      &:before {
+        top: 12px;
+        left: -81px;
+        width: 61px;
+        height: 61px;
+        background-image: url("../img/icon-ingredient-desctop.png");
+      }
+    }
+
+    &--fresh {
+      &::before {
+        background-image: none;
+      }
+    }
   }
 
   .advantages-list__title {
     font-size: 18px;
+    margin-bottom: 5px;
   }
 }
