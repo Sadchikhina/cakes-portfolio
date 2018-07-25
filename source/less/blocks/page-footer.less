@@ -85,14 +85,40 @@
 
 @media (min-width: @desctop-width) {
   .page-footer {
+    align-items: stretch;
     background-color: #dedede;
-    padding-top: 26px;
     padding-left: 72px;
+    padding-top: 0;
+    padding-bottom: 30px;
   }
 
   .page-footer__logo {
     color: @grey-footer-text-desctop;
     font-size: 30px;
+    margin-top: 26px;
     margin-right: 161px;
+  }
+
+  .page-footer__list {
+    margin-top: 10px;
+    order: 0;
+
+    &::after {
+      top: 100px;
+      left: -1148px;
+      width: 1220px;
+    }
+
+    .social-list__item {
+      svg {
+        fill: #8b8b8b;
+      }
+    }
+  }
+
+  .page-footer__copyright {
+    color: @grey-footer-line;
+    margin-top: 20px;
+    margin-left: 572px;
   }
 }
